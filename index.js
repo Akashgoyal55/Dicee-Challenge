@@ -28,3 +28,26 @@ else if (randomNumber2 > randomNumber1){
     document.querySelector("h1").style.color = "red";
 }
 
+//Next update
+function rollDice() {
+    var image1 = document.querySelectorAll("img")[0];
+    var image2 = document.querySelectorAll("img")[1];
+  
+    // Add rolling class to both dice
+    image1.classList.add("rolling");
+    image2.classList.add("rolling");
+  
+    // Remove rolling class after animation is complete
+    setTimeout(function() {
+      image1.classList.remove("rolling");
+      image2.classList.remove("rolling");
+  
+      // Roll Dice
+      var randomNumber1 = Math.floor(Math.random() * 6) + 1;
+      var randomImageSource1 = "images/dice" + randomNumber1 + ".png";
+      image1.setAttribute("src", randomImageSource1);
+  
+      var randomNumber2 = Math.floor(Math.random() * 6) + 1;
+      var randomImage
+  
+
